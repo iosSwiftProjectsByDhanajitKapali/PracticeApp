@@ -101,14 +101,12 @@
 		E70B510F2BADDEC900BA5375 /* PracticeApp */ = {
 			isa = PBXGroup;
 			children = (
-				E70B51102BADDEC900BA5375 /* AppDelegate.swift */,
-				E70B51122BADDEC900BA5375 /* SceneDelegate.swift */,
-				E70B51142BADDEC900BA5375 /* ViewController.swift */,
-				E70B51162BADDEC900BA5375 /* Main.storyboard */,
-				E70B511C2BADDECA00BA5375 /* Assets.xcassets */,
-				E70B511E2BADDECA00BA5375 /* LaunchScreen.storyboard */,
 				E70B51212BADDECA00BA5375 /* Info.plist */,
-				E70B51192BADDEC900BA5375 /* PracticeApp.xcdatamodeld */,
+				E70B511C2BADDECA00BA5375 /* Assets.xcassets */,
+				E70B51452BADF6F200BA5375 /* Lifecycle */,
+				E70B51462BADF70100BA5375 /* Storyboards */,
+				E70B51472BADF72800BA5375 /* Database */,
+				E70B51142BADDEC900BA5375 /* ViewController.swift */,
 			);
 			path = PracticeApp;
 			sourceTree = "<group>";
@@ -128,6 +126,32 @@
 				E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */,
 			);
 			path = PracticeAppUITests;
+			sourceTree = "<group>";
+		};
+		E70B51452BADF6F200BA5375 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				E70B51102BADDEC900BA5375 /* AppDelegate.swift */,
+				E70B51122BADDEC900BA5375 /* SceneDelegate.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		E70B51462BADF70100BA5375 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E70B51162BADDEC900BA5375 /* Main.storyboard */,
+				E70B511E2BADDECA00BA5375 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E70B51472BADF72800BA5375 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E70B51192BADDEC900BA5375 /* PracticeApp.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
