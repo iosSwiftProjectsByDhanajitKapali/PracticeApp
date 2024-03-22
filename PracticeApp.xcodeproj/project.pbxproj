@@ -17,6 +17,7 @@
 		E70B512B2BADDECA00BA5375 /* PracticeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B512A2BADDECA00BA5375 /* PracticeAppTests.swift */; };
 		E70B51352BADDECA00BA5375 /* PracticeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */; };
 		E70B51372BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */; };
+		E70B51442BADE21100BA5375 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51432BADE21100BA5375 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E70B51302BADDECA00BA5375 /* PracticeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITests.swift; sourceTree = "<group>"; };
 		E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E70B51432BADE21100BA5375 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E70B511E2BADDECA00BA5375 /* LaunchScreen.storyboard */,
 				E70B51212BADDECA00BA5375 /* Info.plist */,
 				E70B51192BADDEC900BA5375 /* PracticeApp.xcdatamodeld */,
+				E70B51432BADE21100BA5375 /* APIService.swift */,
 			);
 			path = PracticeApp;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70B511B2BADDEC900BA5375 /* PracticeApp.xcdatamodeld in Sources */,
+				E70B51442BADE21100BA5375 /* APIService.swift in Sources */,
 				E70B51152BADDEC900BA5375 /* ViewController.swift in Sources */,
 				E70B51112BADDEC900BA5375 /* AppDelegate.swift in Sources */,
 				E70B51132BADDEC900BA5375 /* SceneDelegate.swift in Sources */,
