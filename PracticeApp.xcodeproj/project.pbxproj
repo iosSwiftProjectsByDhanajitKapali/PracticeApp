@@ -17,6 +17,7 @@
 		E70B512B2BADDECA00BA5375 /* PracticeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B512A2BADDECA00BA5375 /* PracticeAppTests.swift */; };
 		E70B51352BADDECA00BA5375 /* PracticeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */; };
 		E70B51372BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */; };
+		E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E788E4AD2BB3434900723809 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E70B51302BADDECA00BA5375 /* PracticeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITests.swift; sourceTree = "<group>"; };
 		E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E788E4AD2BB3434900723809 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,7 @@
 				E70B51452BADF6F200BA5375 /* Lifecycle */,
 				E70B51462BADF70100BA5375 /* Storyboards */,
 				E70B51472BADF72800BA5375 /* Database */,
-				E70B51142BADDEC900BA5375 /* ViewController.swift */,
+				E788E4AC2BB3433400723809 /* Views */,
 			);
 			path = PracticeApp;
 			sourceTree = "<group>";
@@ -152,6 +154,15 @@
 				E70B51192BADDEC900BA5375 /* PracticeApp.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		E788E4AC2BB3433400723809 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E70B51142BADDEC900BA5375 /* ViewController.swift */,
+				E788E4AD2BB3434900723809 /* SwiftUIView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				E70B51152BADDEC900BA5375 /* ViewController.swift in Sources */,
 				E70B51112BADDEC900BA5375 /* AppDelegate.swift in Sources */,
 				E70B51132BADDEC900BA5375 /* SceneDelegate.swift in Sources */,
+				E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
