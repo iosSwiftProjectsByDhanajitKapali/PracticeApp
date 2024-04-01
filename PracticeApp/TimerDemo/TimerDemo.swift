@@ -8,83 +8,55 @@
 import SwiftUI
 
 struct TimerDemo: View {
-    
     @State private var elapsedTime: TimeInterval = 0.0
-    @State var isTimerRunning = false
+    @State private var timerIsRunning = false
     @State private var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    
+
     var body: some View {
         VStack {
-            timerDisplayView()
-            VStack {
-                startStopButtonView()
-                resetButtonView()
-                    .disabled(isTimerRunning)
-                    .padding(10)
-                Spacer()
+            Text(String(format: "%.1f", elapsedTime))
+                .font(.largeTitle)
+                .padding()
+            
+            HStack {
+                Button(action: {
+                    if self.timerIsRunning {
+                        self.timer.upstream.connect().cancel()
+                    } else {
+                        self.timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+                    }
+                    self.timerIsRunning.toggle()
+                }) {
+                    Text(timerIsRunning ? "Pause" : "Start")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(timerIsRunning ? Color.red : Color.green)
+                        .cornerRadius(10)
+                }
+                
+                Button(action: {
+                    self.timer.upstream.connect().cancel()
+                    self.elapsedTime = 0.0
+                    self.timerIsRunning = false
+                }) {
+                    Text("Reset")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                }
             }
-            .padding(.top, 50)
         }
         .onReceive(timer) { _ in
-            if self.isTimerRunning {
+            if self.timerIsRunning {
                 self.elapsedTime += 0.1
             }
         }
     }
-    
-    @ViewBuilder func timerDisplayView() -> some View {
-        Text(String(format: "%.1f", elapsedTime))
-            .font(.largeTitle)
-            .padding()
-            .padding(.top, 100)
-    }
-    
-    @ViewBuilder func startStopButtonView() -> some View {
-        Button {
-            if self.isTimerRunning {
-                self.timer.upstream.connect().cancel()
-            } else {
-                self.timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-            }
-            self.isTimerRunning.toggle()
-        } label: {
-            if isTimerRunning {
-                Text("Stop")
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 20)
-                    .background(.red)
-                    .cornerRadius(15)
-            } else {
-                Text("Start")
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundColor(.white)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 20)
-                    .background(.green)
-                    .cornerRadius(15)
-            }
-        }
-    }
-    
-    @ViewBuilder func resetButtonView() -> some View {
-        Button {
-            self.timer.upstream.connect().cancel()
-            self.elapsedTime = 0.0
-            self.isTimerRunning = false
-        } label: {
-            Text("Reset")
-                .font(.system(size: 18, weight: .semibold))
-                .foregroundColor(.white)
-                .padding(.vertical, 10)
-                .padding(.horizontal, 20)
-                .background(!isTimerRunning ? .blue : .gray)
-                .cornerRadius(15)
-        }
-    }
 }
 
-#Preview {
-    TimerDemo()
+struct TimerDemo_Previews: PreviewProvider {
+    static var previews: some View {
+        TimerDemo()
+    }
 }
