@@ -13,8 +13,6 @@ class TimerViewController: UIViewController {
     private var timerIsRunning = false
     private var timer: Timer?
     
-    private var startPauseButton: UIButton = UIButton()
-    
     private let timerLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 40)
@@ -22,6 +20,8 @@ class TimerViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
+    
+    private var startPauseButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,14 @@ class TimerViewController: UIViewController {
         startPauseButton.layer.cornerRadius = 10
         startPauseButton.addTarget(self, action: #selector(startPauseButtonTapped), for: .touchUpInside)
         
+        view.addSubview(startPauseButton)
+        startPauseButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            startPauseButton.topAnchor.constraint(equalTo: timerLabel.bottomAnchor, constant: 20),
+            startPauseButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            startPauseButton.widthAnchor.constraint(equalToConstant: 150), // Set width
+        ])
+        
         let resetButton = UIButton()
         resetButton.setTitle("Reset", for: .normal)
         resetButton.setTitleColor(.white, for: .normal)
@@ -49,17 +57,12 @@ class TimerViewController: UIViewController {
         resetButton.layer.cornerRadius = 10
         resetButton.addTarget(self, action: #selector(resetButtonTapped), for: .touchUpInside)
         
-        let stackView = UIStackView(arrangedSubviews: [startPauseButton, resetButton])
-        stackView.axis = .horizontal
-        stackView.spacing = 20
-        stackView.distribution = .fillEqually
-        
-        view.addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(resetButton)
+        resetButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: timerLabel.bottomAnchor, constant: 20),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            resetButton.topAnchor.constraint(equalTo: startPauseButton.bottomAnchor, constant: 20), // Position below startPauseButton
+            resetButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            resetButton.widthAnchor.constraint(equalToConstant: 150), // Set width
         ])
     }
     
