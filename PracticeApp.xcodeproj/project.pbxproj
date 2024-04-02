@@ -20,6 +20,7 @@
 		E70DACE92BB4678F00B4CAA7 /* PracticeGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */; };
 		E7354C882BBB330000064147 /* TimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7354C872BBB330000064147 /* TimerDemo.swift */; };
 		E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E788E4AD2BB3434900723809 /* SwiftUIView.swift */; };
+		E7BA2A8A2BBC85C100A2CF14 /* TimerUiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGeometryReader.swift; sourceTree = "<group>"; };
 		E7354C872BBB330000064147 /* TimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemo.swift; sourceTree = "<group>"; };
 		E788E4AD2BB3434900723809 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUiKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E7354C872BBB330000064147 /* TimerDemo.swift */,
+				E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */,
 			);
 			path = TimerDemo;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				E70DACE92BB4678F00B4CAA7 /* PracticeGeometryReader.swift in Sources */,
 				E70B511B2BADDEC900BA5375 /* PracticeApp.xcdatamodeld in Sources */,
+				E7BA2A8A2BBC85C100A2CF14 /* TimerUiKit.swift in Sources */,
 				E70B51152BADDEC900BA5375 /* ViewController.swift in Sources */,
 				E70B51112BADDEC900BA5375 /* AppDelegate.swift in Sources */,
 				E70B51132BADDEC900BA5375 /* SceneDelegate.swift in Sources */,
