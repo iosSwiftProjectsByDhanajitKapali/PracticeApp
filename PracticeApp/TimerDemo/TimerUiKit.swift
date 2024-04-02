@@ -8,11 +8,13 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-
+    
     private var elapsedTime: TimeInterval = 0.0
     private var timerIsRunning = false
     private var timer: Timer?
-
+    
+    private var startPauseButton: UIButton = UIButton()
+    
     private let timerLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 40)
@@ -33,7 +35,7 @@ class TimerViewController: UIViewController {
             timerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
         
-        let startPauseButton = UIButton()
+        startPauseButton = UIButton()
         startPauseButton.setTitle("Start", for: .normal)
         startPauseButton.setTitleColor(.white, for: .normal)
         startPauseButton.backgroundColor = .green
@@ -73,6 +75,9 @@ class TimerViewController: UIViewController {
             )
         }
         timerIsRunning.toggle()
+        // Update button title based on timerIsRunning state
+        let buttonTitle = timerIsRunning ? "Pause" : "Start"
+        startPauseButton.setTitle(buttonTitle, for: .normal)
     }
     
     @objc func resetButtonTapped() {
@@ -80,6 +85,8 @@ class TimerViewController: UIViewController {
         elapsedTime = 0.0
         timerIsRunning = false
         timerLabel.text = String(format: "%.1f", elapsedTime)
+        // Reset button title to "Start"
+        startPauseButton.setTitle("Start", for: .normal)
     }
     
     @objc func updateElapsedTime() {
@@ -87,7 +94,6 @@ class TimerViewController: UIViewController {
         timerLabel.text = String(format: "%.1f", elapsedTime)
     }
 }
-
 
 #Preview {
     TimerViewController()
