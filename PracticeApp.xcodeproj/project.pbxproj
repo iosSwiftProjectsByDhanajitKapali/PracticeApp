@@ -20,6 +20,7 @@
 		E70DACE92BB4678F00B4CAA7 /* PracticeGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */; };
 		E71595822BBDB3AE001086A6 /* MyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71595812BBDB3AE001086A6 /* MyOptional.swift */; };
 		E71595862BBDD05F001086A6 /* GridViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71595852BBDD05F001086A6 /* GridViewDemo.swift */; };
+		E71595892BBDD9D2001086A6 /* PaginationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71595882BBDD9D2001086A6 /* PaginationDemo.swift */; };
 		E7354C882BBB330000064147 /* TimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7354C872BBB330000064147 /* TimerDemo.swift */; };
 		E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E788E4AD2BB3434900723809 /* SwiftUIView.swift */; };
 		E7BA2A8A2BBC85C100A2CF14 /* TimerUiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */; };
@@ -61,6 +62,7 @@
 		E71595812BBDB3AE001086A6 /* MyOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOptional.swift; sourceTree = "<group>"; };
 		E71595832BBDB3D6001086A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E71595852BBDD05F001086A6 /* GridViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewDemo.swift; sourceTree = "<group>"; };
+		E71595882BBDD9D2001086A6 /* PaginationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationDemo.swift; sourceTree = "<group>"; };
 		E7354C872BBB330000064147 /* TimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemo.swift; sourceTree = "<group>"; };
 		E788E4AD2BB3434900723809 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUiKit.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E70DACE62BB4672000B4CAA7 /* PracticeGemotryReader */,
 				E7354C862BBB32DD00064147 /* TimerDemo */,
 				E71595842BBDD038001086A6 /* GridViewDemo */,
+				E71595872BBDD9B6001086A6 /* PaginationDemo */,
 			);
 			path = PracticeApp;
 			sourceTree = "<group>";
@@ -194,6 +197,14 @@
 				E71595852BBDD05F001086A6 /* GridViewDemo.swift */,
 			);
 			path = GridViewDemo;
+			sourceTree = "<group>";
+		};
+		E71595872BBDD9B6001086A6 /* PaginationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E71595882BBDD9D2001086A6 /* PaginationDemo.swift */,
+			);
+			path = PaginationDemo;
 			sourceTree = "<group>";
 		};
 		E7354C862BBB32DD00064147 /* TimerDemo */ = {
@@ -345,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71595892BBDD9D2001086A6 /* PaginationDemo.swift in Sources */,
 				E70DACE92BB4678F00B4CAA7 /* PracticeGeometryReader.swift in Sources */,
 				E70B511B2BADDEC900BA5375 /* PracticeApp.xcdatamodeld in Sources */,
 				E7BA2A8A2BBC85C100A2CF14 /* TimerUiKit.swift in Sources */,

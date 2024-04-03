@@ -27,6 +27,7 @@ struct PracticeGeometryReader: View {
                         }
                 })
             }
+            .background(Color.teal)
             Spacer()
         }
     }
