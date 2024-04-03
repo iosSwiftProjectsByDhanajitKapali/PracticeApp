@@ -18,6 +18,7 @@
 		E70B51352BADDECA00BA5375 /* PracticeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */; };
 		E70B51372BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */; };
 		E70DACE92BB4678F00B4CAA7 /* PracticeGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */; };
+		E71595822BBDB3AE001086A6 /* MyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71595812BBDB3AE001086A6 /* MyOptional.swift */; };
 		E7354C882BBB330000064147 /* TimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7354C872BBB330000064147 /* TimerDemo.swift */; };
 		E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E788E4AD2BB3434900723809 /* SwiftUIView.swift */; };
 		E7BA2A8A2BBC85C100A2CF14 /* TimerUiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */; };
@@ -56,6 +57,8 @@
 		E70B51342BADDECA00BA5375 /* PracticeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITests.swift; sourceTree = "<group>"; };
 		E70B51362BADDECA00BA5375 /* PracticeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGeometryReader.swift; sourceTree = "<group>"; };
+		E71595812BBDB3AE001086A6 /* MyOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOptional.swift; sourceTree = "<group>"; };
+		E71595832BBDB3D6001086A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E7354C872BBB330000064147 /* TimerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemo.swift; sourceTree = "<group>"; };
 		E788E4AD2BB3434900723809 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		E7BA2A892BBC85C100A2CF14 /* TimerUiKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUiKit.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 		E70B51042BADDEC900BA5375 = {
 			isa = PBXGroup;
 			children = (
+				E71595832BBDB3D6001086A6 /* MyPlayground.playground */,
 				E70B510F2BADDEC900BA5375 /* PracticeApp */,
 				E70B51292BADDECA00BA5375 /* PracticeAppTests */,
 				E70B51332BADDECA00BA5375 /* PracticeAppUITests */,
@@ -115,6 +119,7 @@
 				E70B51462BADF70100BA5375 /* Storyboards */,
 				E70B51472BADF72800BA5375 /* Database */,
 				E788E4AC2BB3433400723809 /* Views */,
+				E71595802BBDB38D001086A6 /* MyOptional */,
 				E70DACE62BB4672000B4CAA7 /* PracticeGemotryReader */,
 				E7354C862BBB32DD00064147 /* TimerDemo */,
 			);
@@ -170,6 +175,14 @@
 				E70DACE82BB4678F00B4CAA7 /* PracticeGeometryReader.swift */,
 			);
 			path = PracticeGemotryReader;
+			sourceTree = "<group>";
+		};
+		E71595802BBDB38D001086A6 /* MyOptional */ = {
+			isa = PBXGroup;
+			children = (
+				E71595812BBDB3AE001086A6 /* MyOptional.swift */,
+			);
+			path = MyOptional;
 			sourceTree = "<group>";
 		};
 		E7354C862BBB32DD00064147 /* TimerDemo */ = {
@@ -328,6 +341,7 @@
 				E70B51112BADDEC900BA5375 /* AppDelegate.swift in Sources */,
 				E70B51132BADDEC900BA5375 /* SceneDelegate.swift in Sources */,
 				E788E4AE2BB3434900723809 /* SwiftUIView.swift in Sources */,
+				E71595822BBDB3AE001086A6 /* MyOptional.swift in Sources */,
 				E7354C882BBB330000064147 /* TimerDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
