@@ -15,8 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qve-as-BnO">
+                                <rect key="frame" x="50" y="351" width="293" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57K-kT-0ED">
+                                        <rect key="frame" x="20" y="64.666666666666686" width="183" height="21"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NG-Q9-PTF">
+                                        <rect key="frame" x="223" y="64.666666666666686" width="50" height="21"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5NG-Q9-PTF" secondAttribute="trailing" constant="20" id="F5F-QK-Aww"/>
+                                    <constraint firstItem="57K-kT-0ED" firstAttribute="centerY" secondItem="qve-as-BnO" secondAttribute="centerY" id="cAq-Ap-APV"/>
+                                    <constraint firstItem="57K-kT-0ED" firstAttribute="leading" secondItem="qve-as-BnO" secondAttribute="leading" constant="20" id="h8H-4c-WkH"/>
+                                    <constraint firstItem="5NG-Q9-PTF" firstAttribute="centerY" secondItem="qve-as-BnO" secondAttribute="centerY" id="idv-i4-acx"/>
+                                    <constraint firstItem="5NG-Q9-PTF" firstAttribute="leading" secondItem="57K-kT-0ED" secondAttribute="trailing" constant="20" id="kPL-cr-J59"/>
+                                    <constraint firstAttribute="height" constant="150" id="qEo-yr-TQw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qve-as-BnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="738-BL-3Ht"/>
+                            <constraint firstItem="qve-as-BnO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WUz-nG-1rZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qve-as-BnO" secondAttribute="trailing" constant="50" id="mqE-EZ-Oli"/>
+                            <constraint firstItem="qve-as-BnO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="riR-wT-RQm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hfo-EN-FHI"/>
                 </viewController>
@@ -46,6 +82,15 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
