@@ -18,9 +18,10 @@ struct ContentHuggingCompressionDemoView: View {
             }) {
                 Text(button1Text)
                     .padding()
-                    .background(Color.blue)
                     .foregroundColor(.white)
-                    .fixedSize(horizontal: false, vertical: true) // Allow button 1 to expand horizontally
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .lineLimit(1)
             }
             .layoutPriority(1) // Allow button 1 to expand first
             
@@ -29,9 +30,12 @@ struct ContentHuggingCompressionDemoView: View {
             }) {
                 Text(button2Text)
                     .padding()
-                    .background(Color.red)
+                    //.background(Color.red)
                     .foregroundColor(.white)
                     .fixedSize(horizontal: true, vertical: true) // Prevent button 2 from expanding beyond its intrinsic size
+                    .frame(maxWidth: .infinity)
+                    .background(Color.red)
+                    .lineLimit(1)
             }
         }
         .frame(width: 300)
